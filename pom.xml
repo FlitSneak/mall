@@ -18,6 +18,7 @@
         <module>mall-common</module>
         <module>renren-fast</module>
         <module>renren-generator</module>
+        <module>mall-gateway</module>
     </modules>
 
     <!--解决默认jdk1.5的问题-->

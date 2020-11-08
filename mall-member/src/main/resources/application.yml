@@ -4,6 +4,12 @@ spring:
     password: root
     url: jdbc:mysql://192.168.56.10:3306/gulimall_ums
     driver-class-name: com.mysql.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  application:
+    name: mall-member
 
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*.xml
@@ -12,4 +18,4 @@ mybatis-plus:
       id-type: auto
 
 server:
-  port: 8002
+  port: 8882
