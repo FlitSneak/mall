@@ -1,17 +1,11 @@
-/**
- * Copyright (c) 2016-2019 人人开源 All rights reserved.
- *
- * https://www.renren.io
- *
- * 版权所有，侵权必究！
- */
-
 package com.flitsneak.common.utils;
 
 /**
  * 自定义异常
- *
- * @author Mark sunlightcs@gmail.com
+ * 
+ * @author chenshun
+ * @email sunlightcs@gmail.com
+ * @date 2016年10月27日 下午10:11:27
  */
 public class RRException extends RuntimeException {
 	private static final long serialVersionUID = 1L;

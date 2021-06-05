@@ -16,7 +16,7 @@ import lombok.Data;
  * 
  * @author flitsneak
  * @email flitsneak@gmail.com
- * @date 2020-11-08 07:25:56
+ * @date 2021-04-26 02:00:36
  */
 @Data
 @TableName("pms_category")
@@ -61,8 +61,7 @@ public class CategoryEntity implements Serializable {
 	 * 商品数量
 	 */
 	private Integer productCount;
-
-//	表明这个属性不存在，是我们自己添加的属性
+	//	表明这个属性不存在，是我们自己添加的属性
 	@TableField(exist = false)
 	private List<CategoryEntity> children;
 }

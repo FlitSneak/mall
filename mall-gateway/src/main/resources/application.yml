@@ -1,3 +1,6 @@
+server:
+  port: 88
+
 spring:
   cloud:
     nacos:
@@ -17,8 +20,5 @@ spring:
             - Path=/api/**
           filters:
             - RewritePath=/api/(?<segment>/?.*), /renren-fast/$\{segment}
-##前端项目的请求都以api开头。
   application:
     name: mall-gateway
-server:
-  port: 88

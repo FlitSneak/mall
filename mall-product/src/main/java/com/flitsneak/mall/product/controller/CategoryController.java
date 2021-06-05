@@ -1,9 +1,13 @@
 package com.flitsneak.mall.product.controller;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -23,7 +27,7 @@ import com.flitsneak.common.utils.R;
  *
  * @author flitsneak
  * @email flitsneak@gmail.com
- * @date 2020-11-08 07:25:56
+ * @date 2021-04-26 02:00:36
  */
 @RestController
 @RequestMapping("product/category")
@@ -36,9 +40,9 @@ public class CategoryController {
      */
     @RequestMapping("/list/tree")
     public R list(){
-         List<CategoryEntity> entities = categoryService.listWithTree();
+        List<CategoryEntity> entityList = categoryService.listWithTree();
 
-        return R.ok().put("data", entities);
+        return R.ok().put("data", entityList);
     }
 
 
@@ -51,6 +55,7 @@ public class CategoryController {
 
         return R.ok().put("category", category);
     }
+
 
     /**
      * 保存
@@ -77,9 +82,8 @@ public class CategoryController {
      */
     @RequestMapping("/delete")
     public R delete(@RequestBody Long[] catIds){
-		//categoryService.removeByIds(Arrays.asList(catIds));
+		categoryService.removeByIds(Arrays.asList(catIds));
 
-        categoryService.removeMenuByIds(Arrays.asList(catIds));
         return R.ok();
     }
 

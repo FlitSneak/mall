@@ -22,7 +22,7 @@ import com.flitsneak.common.utils.R;
  *
  * @author flitsneak
  * @email flitsneak@gmail.com
- * @date 2020-11-08 07:25:56
+ * @date 2021-04-26 02:00:36
  */
 @RestController
 @RequestMapping("product/skuimages")

@@ -22,7 +22,7 @@ import com.flitsneak.common.utils.R;
  *
  * @author flitsneak
  * @email flitsneak@gmail.com
- * @date 2020-11-08 09:08:49
+ * @date 2021-04-25 23:20:21
  */
 @RestController
 @RequestMapping("coupon/seckillpromotion")

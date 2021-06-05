@@ -12,7 +12,7 @@ import java.util.Map;
  *
  * @author flitsneak
  * @email flitsneak@gmail.com
- * @date 2020-11-08 07:25:56
+ * @date 2021-04-26 02:00:36
  */
 public interface CategoryService extends IService<CategoryEntity> {
 
@@ -21,6 +21,5 @@ public interface CategoryService extends IService<CategoryEntity> {
     List<CategoryEntity> listWithTree();
 
     void removeMenuByIds(List<Long> asList);
-
 }
 

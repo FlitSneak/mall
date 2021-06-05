@@ -1,11 +1,3 @@
-/**
- * Copyright (c) 2016-2019 人人开源 All rights reserved.
- *
- * https://www.renren.io
- *
- * 版权所有，侵权必究！
- */
-
 package com.flitsneak.common.utils;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -15,30 +7,22 @@ import java.util.List;
 
 /**
  * 分页工具类
- *
- * @author Mark sunlightcs@gmail.com
+ * 
+ * @author chenshun
+ * @email sunlightcs@gmail.com
+ * @date 2016年11月4日 下午12:59:00
  */
 public class PageUtils implements Serializable {
 	private static final long serialVersionUID = 1L;
-	/**
-	 * 总记录数
-	 */
+	//总记录数
 	private int totalCount;
-	/**
-	 * 每页记录数
-	 */
+	//每页记录数
 	private int pageSize;
-	/**
-	 * 总页数
-	 */
+	//总页数
 	private int totalPage;
-	/**
-	 * 当前页数
-	 */
+	//当前页数
 	private int currPage;
-	/**
-	 * 列表数据
-	 */
+	//列表数据
 	private List<?> list;
 	
 	/**
@@ -55,7 +39,6 @@ public class PageUtils implements Serializable {
 		this.currPage = currPage;
 		this.totalPage = (int)Math.ceil((double)totalCount/pageSize);
 	}
-
 	/**
 	 * 分页
 	 */
@@ -66,7 +49,6 @@ public class PageUtils implements Serializable {
 		this.currPage = (int)page.getCurrent();
 		this.totalPage = (int)page.getPages();
 	}
-
 	public int getTotalCount() {
 		return totalCount;
 	}
